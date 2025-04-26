@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div id="envelope" onclick="openInvitation()">
+          <p>Klik untuk buka undangan</p>
+        </div>
+        <div id="invitation" class="hidden">
+          <h2>Hi cher</h2>
+          <p>Aku ngajak kamu pergi ke mall tanggal <strong>9</strong> di <strong>Lippo</strong>.</p>
+          <p>Kamu mau ikut?</p>
+          <div class="buttons">
+            <button onclick="respond('yes')">Yes</button>
+            <button onclick="respond('no')">No</button>
+          </div>
+          <p id="response"></p>
+        </div>
+      </div>
+    
+      <script src="script.js"></script>    
+</body>
+</html>
